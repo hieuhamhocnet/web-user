@@ -1,1 +1,10 @@
-'node_modules\n.next\nbuild\n.dist\n' 
+node_modules
+.next
+build
+dist
+coverage
+.cache
+.DS_Store
+Thumbs.db
+.env
+.env.*
