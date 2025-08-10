@@ -40,3 +40,33 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## 🛠 Cách chạy local
 ```bash
 npm install
+
+# ✅ W0 – Checklist Khởi động & Chuẩn bị
+
+## 1. Cài công cụ cần thiết
+- [ ] Node.js 20 LTS (`node -v`, `npm -v`)
+- [ ] Git (`git --version`)
+- [ ] VS Code + Extensions: ESLint, Prettier, Tailwind CSS IntelliSense
+
+## 2. Tạo 2 project local
+- [ ] **Frontend (`web-user`)**: Next.js 14 + TypeScript + Tailwind + ESLint
+- [ ] **Backend (`cms-admin`)**: Strapi (SQLite cho local)
+
+## 3. Cấu hình Prettier & Gitignore
+- [ ] `.prettierrc` với cấu hình `"singleQuote": true, "semi": false`
+- [ ] `.prettierignore` thêm thư mục build/cache/env
+- [ ] `.gitignore` ignore node_modules, build, .env, uploads (cho Strapi)
+
+## 4. Tạo Brand mini-kit cho `web-user`
+- [ ] Font: Plus Jakarta Sans (heading) + Inter (body)
+- [ ] Màu chủ đạo: Gold `#C9A227`, Dark `#0F172A`, Link `#2563EB`
+- [ ] Logo tạm: `public/logo.svg`
+
+## 5. Tạo sitemap nháp
+- [ ] File `SITEMAP.md` với cấu trúc: Home, About, Contact, Category, Tag, Post, Search, 404
+
+## 6. Cấu hình biến môi trường local
+- [ ] `web-user/.env`
+  ```env
+  NEXT_PUBLIC_SITE_URL=http://localhost:3000
+  CMS_API_URL=http://localhost:1337
