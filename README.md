@@ -35,48 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-# Web User (Next.js Frontend)
 
-Frontend cho website/blog đa chủ đề.  
-Tech stack: **Next.js 14 (App Router)**, **React 18**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**.
-
-## Mục tiêu
-- Hiển thị bài viết theo danh mục và tag từ CMS (`cms-admin`).
-- Hỗ trợ SEO mạnh (SSR/SSG/ISR, sitemap, meta tags, schema).
-- Giao diện hiện đại, responsive, dễ đọc.
-- Dễ bảo trì, dễ mở rộng chức năng trong tương lai.
-
-## Công nghệ chính
-- **Next.js 14 (App Router)** – render linh hoạt SSR/SSG/ISR.
-- **Tailwind CSS** + **shadcn/ui** – xây dựng UI nhanh, tối ưu.
-- **TypeScript** – code an toàn, dễ bảo trì.
-- **next-sitemap** – tự sinh sitemap và robots.txt.
-- **Supabase Storage/Cloudinary** – lưu trữ và tối ưu ảnh (tích hợp ở W1–W2).
 
 ## 🛠 Cách chạy local
 ```bash
 npm install
-npm run dev
-# Mở http://localhost:3000
- Biến môi trường (.env)
-env
-Copy
-Edit
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-CMS_API_URL=http://localhost:1337
-
- Cấu trúc thư mục chính
-csharp
-Copy
-Edit
-src/
-  app/            # App Router pages/layout
-  components/     # UI components tái sử dụng
-public/           # Static assets (logo, favicon...)
-
-🗺 Lộ trình phát triển
-W0: Khởi động & chuẩn bị (đang thực hiện)
-W1: Tích hợp CMS Strapi, lấy dữ liệu bài viết
-W2: Hiển thị bài viết, phân trang, SEO cơ bản
-W3: Tối ưu hiệu năng, SEO nâng cao
-W4: Triển khai production
